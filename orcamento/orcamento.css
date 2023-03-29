@@ -75,7 +75,7 @@ header{
  #fundo_imagem{
     width: 100%;
     height: 400px;
-    background-image: url(imagens_uc/image-background3\ 4.png);
+    background-image: url(../assets/image-background3\ 4.png);
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
