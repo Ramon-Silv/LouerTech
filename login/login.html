@@ -1,48 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login/login.css" type="text/css">
+    <title>Login</title>
+    <link rel="stylesheet" href="../login/login.css"  type="text/css" media="screen" />
+
+    <!--Boxicons css-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
 <body>
-    <section>
-        <div class="login">
+   <section class="container forms"> <!--inicio do fundo-->
+        <div class="form login">
+            <div class="form-content"> 
+                <header>Login</header>
 
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Digite seu usuário ou e-mail" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Digite sua senha" class="password">
+                        <i class="bx bx-hide" ></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Entrar</button>
+                    </div>
+
+                    <div class="form-link">
+                        <span>Não tem uma conta? <a href="#" class="signup-link">Inscreva-se</a></span>
+                    </div>
+
+                </form>
+            </div>
         </div>
-
-        <div class="Cadastro">
-            <img src="imagens da uc 2/logo2 (2).png" alt="png"> 
-            
-             <form>
-                 <input id="nome" type="Nome completo:" name="nome" maxlength="50" size="50" placeholder="Nome completo:">
-     
-                 <input id="e-mail" type="Seu e-mail:" name="mail"
-                 maxlength="50" size="50" placeholder="Seu e-mail:">
-     
-                 <input id="Número" type="Número de telefone:" name="numero" maxlength="50" size="50" placeholder="Número de telefone:"> 
-     
-                 <input id="instituicao" type="Instituição:" name="instituiçao" maxlength="50" size="50" placeholder="Instituição:">
-                
-     
-                 <input id="senha" type="Senha:" name="senha" maxlength="50" size="50" placeholder="Senha:"> 
-     
-             <input id="Confirmar" type="Conformar senha:" name="confirmar" maxlength="50" size="50" placeholder="Confirmar senha:"> 
-                
-             </form>
-             <button>
-                 <a href="#"> Criar conta</a>
-             </button>
-             <input type="checkbox" name="opcao1" value="fire">
-             <p id="termos">Eu concordo com os Termos de Serviço e Política de Privacidade</p>
-            </main>
-         
-          
-
-        
-    
+   </section> <!--fim do fundo-->
+</body>
+</html>
     
 </body>
 </html>
