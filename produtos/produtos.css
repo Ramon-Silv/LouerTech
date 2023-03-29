@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*estilo adicionado no menu ao rolar*/
+#menu.ativo{
+    background-color: #d9d9d9;
+    position: sticky;
+    top: 0;
+}
+
+/*estilo adicionado ao toggle*/
+.remove{
+    display: none;
+}
+
+.add{
+    display: block;
+}
+
+/*estilo do menu*/
+#menu{
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.listamenu{
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.listamenu img{
+    width: fit-content;
+    height: 100px;
+}
+
+.listamenu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.lista_centro{
+    align-items: center;
+    font-size: 25px;
+}
+
+.lista_centro a{
+    text-decoration: none;
+}
+
+.lista_centro li{
+    color: #141274;
+    margin: 0 5px;
+    padding: 2px 15px;
+}
+
+.lista_direita{
+    align-items: center;
+}
+
+.lista_direita a{
+    display: flex;
+    text-decoration: none;
+}
+
+.lista_direita button{
+    font-size: 25px;
+    background-color: transparent;
+    width: 100px;
+    margin-right: 15px;
+    color: #141274;
+    border: 0px;
+    cursor: pointer;
+}
+
+.lista_direita li{
+    padding: 10px;
+}
+
+.lista_direita img{
+    width: 40px;
+}
+
+/*estilo da busca de equipamentos*/
+#busca_equipamentos{
+    height: 300px;
+    width: 100%;
+    background-color: #d9d9d9;
+    background-image: url(assets/fundo-gradiente.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;/*alinha horizontal*/
+    align-items: center;/*alinha vertical*/
+}
+
+#busca_equipamentos .busca{
+    width: 100%;    
+    text-align: center;
+    color: #ffffff;
+}
+
+.busca p{
+    font-size: 30px;
+    padding: 5px;
+}
+
+.busca span{
+    font-size: 25px;
+}
+
+.busca .barra_busca{
+    width: 100%;
+    height: 35px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.barra_busca input{
+    background-color: #c5c5c5;
+    color: #323167;
+    height: 45px;
+    width: 40%;
+    border: 0;
+    border-radius: 15px 0 0 15px;
+    padding: 0 4px 0 16px;
+    font-size: 18px;
+    float: left;
+}
+
+.barra_busca input:focus{
+    outline: none;
+}
+
+.barra_busca button{
+    color: #ffffff;
+    background-color: #c5c5c5;
+    height: 45px;
+    width: 4%;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 0 10px 0 4px;
+    cursor: pointer;
+}
+
+.barra_busca button span{
+    font-size: 30px;
+}
+
+/*estilo dos tipos de equipamentos*/
+#tipo_equipamentos{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#tipo_equipamentos .div_equipamentos{
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #1d1d1f;
+}
+
+.div_equipamentos img{
+    width: 90px;
+}
+
+.div_equipamentos img:hover{
+    animation: tremer 1s alternate linear;
+    /*define o nome da animação*/
+    /*define a duração da animação*/
+    /*a animação é reproduzida primeiro para frente e depois para trás*/
+    /*define uma animação com a mesma velocidade do início ao fim*/
+    animation-iteration-count: 2;/*define quantas vezes a animação deve ser executada antes de parar*/
+    animation-delay: 0.2s;/*tempo antes da animação começar*/
+}
+
+@keyframes tremer{
+    0% {margin-left: 0;}
+    10% {margin-left: 15px;}
+    20% {margin-left: 0;}
+    30% {margin-left: -15px;}
+    40% {margin-left: 0;}
+    50% {margin-left: 15px;}
+    60% {margin-left: 0;}
+    70% {margin-left: -15px;}
+    80% {margin-left: 0;}
+    90% {margin-left: 15px;}
+    100% {margin-left: 0;}
+}
+
+.div_equipamentos span:hover{
+    border-bottom: 1px solid; 
+}
+
+/*estilo do mostruário de equipamentos*/
+#equipamentos{
+    width: 100%;
+    padding: 10px;
+}
+
+#equipamentos h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 30px;
+}
+
+#equipamentos .equipamentos{
+    width: 100%;
+    height: 350px;
+    margin: 10px 0 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.equipamentos .equipamentos_item{
+    background-color: #f5f5f5;
+    width: 30%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #141274;
+    padding: 2px;
+    border: 1px solid rgba(20, 18, 116, 0.3);
+}
+
+.equipamentos .equipamentos_item:hover{
+    transition: 0.5s;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.equipamentos_item img{
+    width: 230px;
+    height: 65%;
+    padding: 10px;
+}
+
+.equipamentos_item p{
+    width: 95%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.equipamentos_item button{
+    width: 50%;
+    height: 30px;
+    font-size: 19px;
+    color: #141274;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 10px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.equipamentos_item button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*estilo do rodapé*/
+footer{
+    width: 100%;
+    height: 350px;
+    background-color: #63636A;
+}
+
+footer .conteudo_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+    height: 310px;
+    padding: 20px 30px;
+}
+
+footer .divs_footer{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 100%;   
+}
+
+.divs_footer img{
+    width: 200px;
+    height: fit-content;
+}
+
+.divs_footer span{
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.divs_footer ul{
+    list-style: none;
+}
+
+.divs_footer ul li img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.divs_footer a, .divs_footer a img{
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    width: 18px;
+}
+
+footer .topo_pagina{
+    height: 30px;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+footer .topo_pagina span{
+    font-size: 30px;
+    color: #000000;
+}
+
+footer .copyright{
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+}

@@ -26,14 +26,19 @@ header{
     width:100%;
     height: 600px;
     background-image: url(../assets/imgFundo.jpg);
-    background-size: cover;
+     background-size: cover; 
 }
 
 #textPrincipal{
     font-size: 70px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, .9);
     text-align: right;
     padding: 50px 0 30px 0;
+}
+
+.textoQuemSomos{
+    font-size: 30px;
+    color: rgba(255, 255, 255, .9);
 }
 
 .areaTexto{
@@ -52,6 +57,7 @@ header{
     text-align: center;
     padding: 70px;
     box-sizing: border-box;
+    color: #000;
 }
 
 .titHistoria{
@@ -65,7 +71,7 @@ header{
 .sessaoProposito{
     width: 100%;
     height: 617px;
-    background-image: url(../assets/fundoMissaoCinza.jpg);
+    background-image: url(../assets/fundoMissaoAzul.jpg);
     background-size: cover;
     text-align: center;
     align-items: center;
@@ -82,8 +88,7 @@ header{
 
 .textoMenorProposito{
     font-size: 30px;
-    color: white;
-    
+    color: white; 
 }
 
 .espacoIcone{
@@ -159,18 +164,54 @@ img{
     padding-bottom: 25px;
 }
 
-.botaoSaibaMais{
+.custom-btn {
     width: 250px;
     height: 40px;
-    border: 3px solid #A3A3AD;
+    color: #fff;
     border-radius: 50px;
-    text-align: center;
-}
-
-h3{
     font-size: 25px;
-    padding-top: 5px;
-}
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .btn-15 {
+    background: #63636A;
+    border: none;
+    z-index: 1;
+  }
+  .btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #3434ee;
+    border-radius: 50px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-15:hover {
+    color: #fff;
+  }
+  .btn-15:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-15:active {
+    top: 2px;
+  }
 
 .nossosParceiros{
     width: 100%;
@@ -180,7 +221,7 @@ h3{
 #areaTituloparceiros{
     width: 100%;
     height: 100px;
-    background-color: rgb(163, 163, 173);
+    background-color: #63636A;
     text-align: center;
     padding-top: 30px;
 }
@@ -211,8 +252,15 @@ h3{
     height: 120px;
 }
 
+#logoMarca:hover{
+    width: 14%;
+    height: 130px;
+    transition: 1s;
+}
+
+
 footer{
     width: 100%;
-    height: 100px;
-    background-color: #A3A3AD;
+    height: auto;
+    background-color: #63636A;
 }
