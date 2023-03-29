@@ -12,9 +12,10 @@ body{
 img{
     width: 80px;
     height: 80px; 
+    margin-top:10px;
 }
 form{
-    width: 50%;
+    width:50%;
     height: 550px;
     background-color: #FFFFFF;
     border: 3px solid #141274;
