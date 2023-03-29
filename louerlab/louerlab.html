@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LouerLab </title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="louerlab.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="LouerLab">
         <header></header>
         
         <section class="quemSomos">
-            <h1 id="textPrincipal">
+            <h1 id="textPrincipal" data-aos="fade-down-left" data-aos-duration="950">
                 Venha nos conhecer!
             </h1>
-            <div class="areaTexto">
-                <h2 class="textoMenorProposito">
+            <div class="areaTexto" data-aos="fade-down-left" data-aos-duration="950">
+                <h2 class="textoQuemSomos" >
                     Venha, queremos te contar sobre <br>nosso projeto, sonho e missão. E <br>saiba como seu papel <br> é essencial!
                 </h2>
             </div>
         </section>
         
-        <div class="historia">
-            <h1 class="titHistoria">
+        <div class="historia" data-aos="zoom-in" data-aos-duration="950">
+            <h1 class="titHistoria" >
                 Um pouco da nossa história
             </h1>
             <h2 class="textHistoria">
@@ -31,39 +33,39 @@
             </h2>
         </div>
 
-        <section class="sessaoProposito">
-            <h1 class="textoMaiorProposito">
+        <section class="sessaoProposito" >
+            <h1 class="textoMaiorProposito" data-aos="fade-up">
                 Propósito
             </h1>
-            <h2 class="textoMenorProposito">
+            <h2 class="textoMenorProposito" data-aos="fade-up">
                 Transformar vidas através da tecnologia.
             </h2>
             <div class="espacoIcone">
-                <img src="../assets/iconeGlobo.png">
+                <img src="../assets/iconeGlobo.png" data-aos="fade-up">
             </div>
 
-            <h1 class="textoMaiorProposito">
+            <h1 class="textoMaiorProposito" data-aos="fade-up">
                 Missão
             </h1>
-            <h2 class="textoMenorProposito">
+            <h2 class="textoMenorProposito" data-aos="fade-up">
                 Democratizar o acesso a tecnologia de todos alunos de baixa renda.
             </h2>
-            <div class="espacoIcone">
+            <div class="espacoIcone" data-aos="fade-up">
                 <img src="../assets/iconeMapa.png">
             </div>
 
-            <h1 class="textoMaiorProposito">
+            <h1 class="textoMaiorProposito" data-aos="fade-up">
                 Visão
             </h1>
-            <h2 class="textoMenorProposito">
+            <h2 class="textoMenorProposito" data-aos="fade-up">
                 Ser uma empresa relevante no meio de empréstimo tecnológico de pequeno custo
             </h2>
-            <div class="espacoIcone">
+            <div class="espacoIcone" data-aos="fade-up">
                 <img src="../assets/iconeOlho.png">
             </div>
         </section>
 
-        <section id="areaMapas">
+        <section id="areaMapas" data-aos="fade-right" data-aos-duration="950">
             <div class="textoMaps">
                 <h1 class="titMaps">
                     Se preferir, venha nos visitar em nosso escritório!
@@ -77,16 +79,14 @@
             </div>
         </section>
 
-        <section class="parceiros">
+        <section class="parceiros" data-aos="fade-left" data-aos-duration="950" >
             <div class="imgParceiros"></div>
             
             <div class="areaParceiros">
                 <h1 class="textParceiros">
                     Seja um de nossos parceiros!
                 </h1> 
-                <div class="botaoSaibaMais">    
-                    <h3> Saiba mais!</h3>      
-                </div>
+                <button class="custom-btn btn-15">Saiba mais!</button>
             </div>
 
 
@@ -105,7 +105,7 @@
                         <img src="../assets/logoMeta1.png">
                     </div>
                     <div id="logoMarca">
-                        <img src="../assets/logoMeta1.png">
+                        <img src="../assets/logoDell1.png">
                     </div>
                     <div id="logoMarca">
                         <img src="../assets/logoOracle1.png">
@@ -127,5 +127,9 @@
 
         </footer>
     </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>
