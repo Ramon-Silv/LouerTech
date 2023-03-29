@@ -7,14 +7,14 @@
     <title>Login</title>
     <link rel="stylesheet" href="../login/login.css"  type="text/css" media="screen" />
 
-    <!--Boxicons css-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  <!--Boxicons css-->
 
 
 </head>
 <body>
    <section class="container forms"> <!--inicio do fundo-->
-        <div class="form login">
+        <div class="form login"> <!--inicio do fundo branco do login-->
             <div class="form-content"> 
                 <header>Login</header>
 
@@ -25,24 +25,39 @@
 
                     <div class="field input-field">
                         <input type="password" placeholder="Digite sua senha" class="password">
-                        <i class="bx bx-hide" ></i>
+                       
                     </div>
 
                     <div class="form-link">
                         <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
                     </div>
 
-                    <div class="field button-field">
+                    <div class="field button-field"> <!--inicio div com o botão de entrar-->
                         <button>Entrar</button>
-                    </div>
+                    </div> <!--final da div com o botão de entrar-->
 
-                    <div class="form-link">
-                        <span>Não tem uma conta? <a href="#" class="signup-link">Inscreva-se</a></span>
-                    </div>
-
+                    <div class="form-link"> <!--incio da div para colocar o link da página de registro-->
+                        <span>Não tem uma conta? <a href="#" class="link signup-link">Inscreva-se</a></span>
+                    </div> <!--final da div para colocar o link de registro-->
                 </form>
             </div>
-        </div>
+            <div class="line"></div> <!--inicio/fim da linha para separar o login com o login com alguma rede social-->
+
+            <div class="media-options"> <!--inicio da div com a opção de login do facebook-->
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Faça login com o Facebook</span>
+                </a>
+            </div> <!--final da div com a opção de login com o facebook-->
+
+            <div class="media-options"> <!--inicio da div com a opção de login com o google-->
+                <a href="#" class="field google">
+                    <img src="../assets/google.jpg" alt="" class="google-img">
+                    <span>Faça login com o Google</span>
+                </a>
+            </div> <!--final da div com a opção de login com o google-->
+
+        </div> <!--final do fundo branco do login-->
    </section> <!--fim do fundo-->
 </body>
 </html>
