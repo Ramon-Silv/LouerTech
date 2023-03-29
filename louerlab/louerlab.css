@@ -164,14 +164,14 @@ img{
     padding-bottom: 25px;
 }
 
-.botaoSaibaMais{
+/* .botaoSaibaMais{
     width: 250px;
     height: auto;
     border: 2px solid #3434ee;
     border-radius: 50px;
     text-align: center;
     background-color: #ffffff;
-}
+} */
 
 /* .botaoSaibaMais :hover{
     color: #ffffff;
@@ -202,7 +202,7 @@ img{
   }
 
   .btn-15 {
-    background: rgb(163, 163, 173);
+    background: #63636A;
     border: none;
     z-index: 1;
   }
@@ -240,7 +240,7 @@ img{
 #areaTituloparceiros{
     width: 100%;
     height: 100px;
-    background-color: rgb(163, 163, 173);
+    background-color: #63636A;
     text-align: center;
     padding-top: 30px;
 }
@@ -281,5 +281,5 @@ img{
 footer{
     width: 100%;
     height: 100px;
-    background-color: #A3A3AD;
+    background-color: #63636A;
 }
