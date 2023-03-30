@@ -157,6 +157,7 @@ section .container{
     padding: 10px;
     text-align: center;
     display: flex;
+    justify-content: center
 }
 
 .div_informativos1{
