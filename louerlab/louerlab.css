@@ -7,9 +7,18 @@
 
 /*estilo adicionado no menu ao rolar*/
 #menu.ativo{
-    background-color: #d9d9d9;
-    position: sticky;
+    background-color: #ffffff;
+    position: fixed;
     top: 0;
+    z-index: 1;
+    transition: 2.5s;
+}
+#menu.ativo:hover{
+    background-color: #919191;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: 2.5s;
 }
 
 /*estilo adicionado ao toggle*/
@@ -93,6 +102,7 @@
 body{
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .LouerLab{
@@ -321,12 +331,16 @@ img{
 .areaIcones{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .icones{
-    width: 70%;
+    width: 60%;
     height: 120px;
-    padding: 20px 0px 20px 201.6px ;
+    padding: 18px 0px ;
     z-index: 5;
     align-items: center;
     flex-direction: row;
@@ -336,20 +350,14 @@ img{
 
 #logoMarca{
     width: 13%;
-    height: 120px;
+    height: 110px;
+    padding: 6px;
 }
 
 #logoMarca:hover{
-    width: 14%;
-    height: 130px;
+    width: 15%;
+    height: 115px;
     transition: 1s;
-}
-
-
-footer{
-    width: 100%;
-    height: auto;
-    background-color: #63636A;
 }
 
 /*estilo do rodapé*/
