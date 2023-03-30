@@ -14,7 +14,7 @@
     transition: 2.5s;
 }
 #menu.ativo:hover{
-    background-color: #919191f8;
+    background-color: #919191;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -333,9 +333,9 @@ img{
 }
 
 .icones{
-    width: 70%;
+    width: 60%;
     height: 120px;
-    padding: 20px 0px 20px 201.6px ;
+    padding: 18px 0px 18px 200.6px ;
     z-index: 5;
     align-items: center;
     flex-direction: row;
@@ -344,21 +344,15 @@ img{
 }
 
 #logoMarca{
-    width: 13%;
-    height: 120px;
+    width: 17%;
+    height: 110px;
+    padding: 6px;
 }
 
 #logoMarca:hover{
-    width: 14%;
-    height: 130px;
+    width: 18%;
+    height: 115px;
     transition: 1s;
-}
-
-
-footer{
-    width: 100%;
-    height: auto;
-    background-color: #63636A;
 }
 
 /*estilo do rodapé*/
