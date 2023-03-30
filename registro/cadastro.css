@@ -1,52 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto&display=swap');
+
 *{
     margin: 0;
-    border: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 body{
     background:#D9D9D9;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
 }
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 640px;
+}
+
 img{
     width: 80px;
     height: 80px; 
     margin-top:10px;
 }
+
 form{
     width:50%;
-    height: 550px;
+    height: 90%;
+    margin: 100px;
     background-color: #FFFFFF;
-    border: 3px solid #141274;
-    border-radius: 25px;  
+    border-radius: 20px;  
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 52px;
 }
-div{
-    width: 38%;
+
+div.inputs{
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: auto;
 }
-div input{
-    width: 110px;
-    height: 26px;
+
+div.inputs input{
+    width: 45%;
+    height: 40px;
     display: flex;
     flex-direction: row;
-    
 }
+
 input{
-    width: 250px;
-    height: 50px;
+    width: 85%;
+    height: 40px;
     background: #ffff;
-    border: 2px solid #141274;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 200;
     font-size: 15px;
@@ -56,109 +67,143 @@ input{
     margin-top: 12px;
 }
 
-    
+input:focus{
+    outline: none;
+    border-bottom-width: 2px;
+    border-bottom-color: #000;
+}
 
 #sim{
-    width: 15px;
-    height: 34px;
-    border: 5px solid #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 410px;
+    box-shadow: none;
+    height: 20px;
+    width: 20px;
+    line-height: normal;
+    color: #000; 
+    padding-left: 0; 
+    margin-top: 0;
+    margin-right: 10px;
 }
-p{
-    position: absolute;
-    left: 8%;
-    right: 6.39%;
-    bottom: 41.84%;
-    font-family: 'Roboto';
+
+.sim{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+}
+
+.sim p{
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 62px;
-    margin-top: 5px;
+    line-height: normal;
     text-align: center;
-    top: 500px;
+}
 
+.sim p span{
+    color: #0071d3;
+    cursor: pointer;
+}
+
+.sim p span:hover{
+    text-decoration: underline;
 }
 
 #text{
     height: 100px;
 }
+
 a{
-    background-color: #ffff;
-    border: 2px solid #141274;
+    background-color: #0071d3;
+    border: 2px solid #0071d3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
-    width: 100px;
+    width: 50%;
     text-align: center;
-    font-family: 'Molengo';
     font-style: normal;
     font-weight: 200;
     font-size: 15px;
     line-height: 35px;
     margin: 10px;
 }
+
 a button{
-    background-color: #ffff;
+    background-color: #0071d3;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
-
-@media only screen and (max-width:480px){
-    form{
-        width: 80%;
-    }
-
-    div{
-        margin-right: 128px;
-    }
-
-    div input{
-        margin-left: 10px;
-    }
-    p{
-        font-size: 13px;
-    }
-    #sim{
-        margin-right: 350px;
-    }
+.janela_modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(162, 162, 162,0.6);
+    visibility: hidden;
 }
 
-/* Final*/
- 
-@media only screen and (min-width:481px){
-    @media only screen and (max-width:720px)
-    {
-        form{
-            width: 90%;
-            
-        }
-        div{
-            margin-right: 40px;
-        }
-        div input{
-            margin-left: 15px;
-        }
-        p{
-            margin-left: 10px;
-        }
-
-        #sim{
-            margin-right: 400px;
-        }
-
+@keyframes animacion{
+    from{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    to{
+        opacity: 1;
+        width: 500px;
+        height: 220px;
     }
 }
 
+.modal{
+    width: 500px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: animacion;
+    animation-duration: 2s;
+}
 
+.close{
+    width: 30px;
+    height: 30px;
+    border-radius: 0 10px 0 0;
+    background-color: red;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
 
+.texto_modal{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
 
+.texto_modal p{
+    font-size: 30px;
+}
 
+.button_modal{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
 
-
-
-
-
-
-
-
-
+.modal button{
+    background-color: #0071d3;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
