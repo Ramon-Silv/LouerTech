@@ -124,11 +124,15 @@ section{
     background-image: url(../assets/fundoMissaoAzul.jpg);
     background-size: cover;
     border-radius: 25px;
+    align-items: center;
+    text-align: center;
 }
 
 section .container{
     margin: 20px;
     display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 #logo_informativo{
@@ -148,7 +152,7 @@ section .container{
 .div_informativos{
     width: 100%;
     height: auto;
-
+    align-items: center;
     border-radius: 25px;
     padding: 10px;
     text-align: center;
