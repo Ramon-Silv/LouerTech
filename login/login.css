@@ -32,8 +32,8 @@ header{
 }
 
 header img{
-    height: 150px;
-    width: 170px;
+    height: auto;
+    width: auto;
 }
 
 form{
