@@ -8,8 +8,9 @@
 /*estilo adicionado no menu ao rolar*/
 #menu.ativo{
     background-color: #d9d9d9;
-    position: sticky;
+    position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 /*estilo adicionado ao toggle*/
