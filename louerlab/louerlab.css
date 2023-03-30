@@ -330,12 +330,16 @@ img{
 .areaIcones{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .icones{
     width: 60%;
     height: 120px;
-    padding: 18px 0px 18px 200.6px ;
+    padding: 18px 0px ;
     z-index: 5;
     align-items: center;
     flex-direction: row;
@@ -344,13 +348,13 @@ img{
 }
 
 #logoMarca{
-    width: 17%;
+    width: 13%;
     height: 110px;
     padding: 6px;
 }
 
 #logoMarca:hover{
-    width: 18%;
+    width: 15%;
     height: 115px;
     transition: 1s;
 }
