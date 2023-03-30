@@ -170,6 +170,7 @@ a button{
     transform: translate(-50%, -50%);
     animation-name: animacion;
     animation-duration: 2s;
+    animation-delay: -1s;
 }
 
 .close{
