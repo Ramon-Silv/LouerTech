@@ -91,90 +91,66 @@
 .lista_direita img{
     width: 40px;
 }
+/*fim da header*/
 
-.informativos_car{
-    width: 100%;
-    padding: 10px;
+#fundo{
+    height: 350px;
+    background-color: #141274;
 }
 
-.informativos_car{
-    width: 100px;
-
-}
-
-.informativos_car{
-    background-color: #ffffff;
+.imagen_logo{
     width: 30%;
-    height: 100%;
+    height: auto;
+}
+
+.textos{
+    padding: 10px;
+    background-color: #c5bfbf88;
+    width: 30%;
+    height: auto;
+    float: left;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-left: 2.5%;
+    margin-bottom: 25px;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #141274;
-    padding: 2px;
-    border: 1px solid rgba(20, 18, 116, 0.3);
 }
 
-section{
-    width: 100%;
-    background-image: url(../assets/fundoMissaoAzul.jpg);
-    background-size: cover;
-    
-    align-items: center;
-    text-align: center;
-    margin: auto;
-}
-
-section .container{
-    align-items: center;
-    text-align: center;
-    margin: auto;
-}
-
-#logo_informativo{
-    width: 55px;
-    height: 50px;
-}
-
-#image{
-    width: 100%;
-}
-
-#image div{
-    font-size: 20px;
-    color: #ffffff;
-}
-
-.div_informativos{
-    width: 100%;
-    height: auto;
-    align-items: center;
-    border-radius: 25px;
+.textos2{
     padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-}
-
-.div_informativos1{
+    background-color: #c5bfbf88;
     width: 30%;
     height: auto;
-    background-color: #dad9d9;
-    border-radius: 25px;
-    padding: 10px;
-    margin: 15px;
+    float: left;
     text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-left: 2.5%;
+    margin-bottom: 25px;
+    border-radius: 15px;
 }
 
-
+.textos3{
+    padding: 10px;
+    background-color: #c5bfbf88;
+    width: 30%;
+    height: auto;
+    float: left;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-left: 2.5%;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
 
 /*estilo do rodapé*/
 footer{
     width: 100%;
     height: 350px;
     background-color: #63636A;
+    float: left;
 }
 
 footer .conteudo_footer{
