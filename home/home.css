@@ -186,13 +186,40 @@ h1{
 #divdoformulario{
     float: left;
     width: 80%;
-    height: 440px;
+    height: 460px;
     background-color: #97959588 ;
     margin-left: 8.5%;
     align-items: center;
     border-radius: 15px;
 }
+
+#divdoformulario .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.form .div-form1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .div-form2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .formularinho{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 #formulario1{
@@ -230,7 +257,8 @@ input{
     border-radius: 3px;
     background-color: white;
     border: none;
-
+    width: 400px;
+    height: 50px;
 }
 
 input p{
@@ -246,10 +274,10 @@ label{
 }
 
 #fale_mais{
-    width: 300px;
-    height: 100px;
+    width: 400px;
+    height: 50px;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 
