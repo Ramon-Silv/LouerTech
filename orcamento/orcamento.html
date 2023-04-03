@@ -127,16 +127,16 @@
         </div>
 
         <div id="calculos">
-            <div class="calcular">Calcular</div> 
+            <div class="calcular" onclick="mostrar_valores()">Calcular</div> 
                
         </div>
 
         <div id="valor">
-            <div class="valor_frete">Valor do frete R$</div>
+            <div class="valor_frete">Valor do frete R$ <span id="span_frete"></span></div>
         </div>
 
         <div id="total">
-            <div class="valor_total">Valor total R$</div>
+            <div class="valor_total">Valor total R$ <span id="span_valor_total"></span></div>
         </div>
 
         
@@ -211,4 +211,5 @@
 }
 window.addEventListener('scroll', Scrollativo);//adicionando evento de rolagem
 </script>
+<script src="orcamento.js"></script>
 </html>
